@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    
+        <!--I am putting google font here. Is this best place, below style link? -->
+    <link href="https://fonts.googleapis.com/css?family=Oregano" rel="stylesheet">
+
+    <title>Play area of Cat Chat Tarot for free reading.</title>
+  </head>
+  <body>
+      
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">Cat Chat Tarot</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="play.html">Let's Play!<span class="sr-only">(current)</span></a>
+   <!--   </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Cat Chat Tarot</a> I STILL DON'T UNDERSTAND WHY THERE'S A HOME ITEM, WHEN TO ME THAT'S PART OF LIST.-->
+      </li>
+      
+        <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>    
+      </li>    
+        <li class="nav-item">
+        <a class="nav-link" href="tarot.html">Weekly Column</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="purchase.html">Purchase a Reading</a>
+      </li>
+    <!--  <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li> <!--got rid of for now, unless do membership only area.-->
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+   
+   <!-- Klea, please find ONE STYLE TO DO for all other pages besides landing page for continuity. Not sure if will use same font, but if do, I need it to stand out from jumbotron, and not distract from page design. Color will be same as logo font, though -->
+   
+   <!--maybe I need to adjust css for container and make sure in proper order?-->
+ <div class="container" id="play"> 
+ 
+ <h1>Let's Play!</h1>  
+ 
+ <div class="row justify-content-center"> <!--i added justify etc to center tarot reveal area 8/29 1:42pm-->
+ <div class="col-12" id="intro-t">
+<!--THE PLAY AREA TOO BIG NOW. SHRINK DOWN CLICKABLE BOX AREA. GET RID OF BORDER, BUT DO HAVE ONE SOLID COLOR FOR CONTAINER. get rid of margin on #image. it's off when in mobile.---->
+ 
+<p>Think of a question and click below for an action card. Every week, I hand pick 13 different cards, that randomly appear when you click below. Once you get your action card, click again for another question. Once you have gotten your first action card, the cards randomly appear with each new click. Enjoy!!</p>
+
+</div> <!--end of intro div--> <!--because i added an about section, not sure     what this is a part of or if I got rid of intro. Also, even if i have and about page, there should be short explanation of games, with a link back to ABOUT page (for seo) and ease of use-->
+
+
+<!--see bootstrap for cols and offset: https://getbootstrap.com/docs/4.0/layout/grid/ -->
+
+<!--<div class="row justify-content-center"> <!--is it best to closely define row, or just add extra class. Test out to see what easier. Esp since other pages may differ in style anyway-->
+<!--
+<div class="col-12 col-sm-6 col-md-4"> -->
+
+<!--8/29 WHY IS c9 folder all of sudden in cat chat?? IS IT BECAUSE I PUT ON GITHUB EVEN THOUGH FILES WOULD NO UPLOAD, EVEN AFTER TRIMMED DOWN FILE? AND HAD ZIP DOC OPEN TO EXPOSE FILES? AND ONLY TRIED TRANSFERING ALL FOLDERS AND FILES BUT c9? ALTHOUGH AT ONE POINT I DID TRY SELECT FILE METHOD AND CLICKED ON THE ZIP FOLDER, BUT I DIDN'T CLICK TO OK IT, BECAUSE I THOUGHT MIGHT MESS UP IF DID WHOLE ZIP FOLDER------>
+
+
+<!--tarot box below this is duplicate of below. col/row test------->
+<div class="row">
+  <div class="col" id="tarot-box"> <!--added cols to this and tarotframe etc. I TOOK OUT SIZES. THEY MESSED UP PHOTO AT IN BET SIZE. TOOK OFF COL SIZE ON TAROT BOX AND TAROT FRAME AREA.-->
+  
+  <!--AND NOW WILL TAKE OUT IMG SIZE IN CSS AS FLUID NOT WORKING-->
+        <div id="ask">
+          Click here for your action card!! <!--WORK ON TEXT BEING RESP TO GET SMALLER-->
+        </div>
+ <!--book says for btsrp to work prop col & row must be inside container. FIGURE THIS OUT-->       
+<div class="col" id="tarotframe">
+   <img id="image" src="img/movie.png" class="img-fluid"> <!--8/29 5:30pm. added img fluid class.  IMG FLUID AWFUL WITH COL SIZES. TRY W/O-->
+
+<!--************ img fluid wasn't working cause spelled wrong. WANT TO CHANGE COLOR TO DARKER TO STAND OUT AND POSSIBLY GET RID OF BORDERS ON PARTS******>
+
+
+</div>  <!--end of tarotframe-->     
+
+</div> <!--end of tarot box-->
+</div> <!--I ADDDED A ROW SO ADDED EXTRA END DIV. NORMALLY WOULD BE LAST DIV FJY BUT DON'T WANNA MESS UP LAST COMMENT LINE SO DON'T GET MIXED UP-->
+</div> <!--end of container of col/row test. BEFORE ANY COL BOOT ROW LOOKED LIKE BELOW-->
+
+
+
+<!--THIS IS ORIG CONTENT, BUT NOT RESPONISIVE SO ABOVE IS PLAY AREA---->
+<!--tarot box below--> 
+<!--<div id="tarot-box">
+        <div id="ask">
+          Click here for your action card!!
+        </div>
+        
+<div id="tarotframe">
+   <img id="image" src="img/small-lep-cat.png">
+
+</div>  <!--end of tarotframe-- > 
+
+</div> <!--end of tarot box-- TOOK OUT > HERE AND ABOVE TO DUMMY OUT
+
+</div> <!--end of container -->
+<!--THE ABOVE IS ORIG OF PAGE, BUT WASN'T RESPONSIVE----------->
+
+
+
+
+
+
+
+
+<!--KLEA-------FOOTER MUST STAY ON BOTTOM. PLEASE FIX----------->
+
+<!--footer will have to be uniform with all footers. should i contain in main container page? should i just have footer div, w/o colums, rows? It should be balance with nav  bar IMO-->
+
+<!--I assume MY PAGE TOO BIG WHICH IS WHY FOOTER GOES TO TOP AT TIMES. CHECK OUT:  CSS "Always on the bottom" Footer
+A PEN BY Chris Bracco
+
+https://codepen.io/cbracco/pen/zekgx
+
+
+<!--<div class="row w-100 p-1"> 
+ <div class="col-12">  -->
+  <footer>footer with copyright, etc.</footer> 
+ </div>
+<!--</div>-->
+
+ 
+    
+<!-- I STILL GET CONFUSED AS TO WHICH JQUERY TO GET FROM GOOGLE HOSTED LIBRARIES. I know one is jquery and other ui, but I see a few others -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!--and our js style script always last -->
+ <!--why is validator saying I have a fatal error here, when I don't see it on here, but see it on view: https://validator.w3.org/nu/?doc=https%3A%2F%2Fpreview.c9users.io%2Fluvelygirl%2Fcat-chat-tarot%2Fplay.html%3F_c9_id%3Dlivepreview0%26_c9_host%3Dhttps%3A%2F%2Fide.c9.io
+ -->
+    <script src="js/java.js"></script>
+    
+  </body>
+</html>

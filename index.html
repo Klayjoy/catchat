@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--I am putting google font here. Is this best place, below style link? -->
+    <link href="https://fonts.googleapis.com/css?family=Oregano" rel="stylesheet">
+
+    <title>Cat Chat Tarot</title>
+  </head>
+  <body>
+      <!--I JUST REALIZED AFTER NOT LINKING TO JUMBOTRON WHEN CLICK ON LOGO ON NAV, AND LOOKING AT HOW ALL LABELED, THAT MY INDEX PAGE IS TECHINCALLY THE ABOUT CAT CHAT TAROT, AND NOT JUMBOTRON PAGE. IT WOULD SEEM THAT INDEX PAGE IS ACTUALLY JUMBOTRON. IS THIS SMART TO HAVE INDEX AS JUMBOTRON, ESP FOR SEO? -->
+      
+      <!--ok, so just realized, there's no about page, because it's included in first half of play BUT IT LOOKS LIKE I MADE A MISTAKE AND MADE 2 SEPARATE SECTIONS, SO I'LL GO WITH IT. ESP SINCE WHEN SOMEONE FIRST GOES ON SITE THEY'LL WANT TO KNOW ABOUT IT AND HAVE SEP PLAY AREA. IT WOULD BE GOOD TO DESIGN AN ABOUT PAGE THAT'S SIMPLE AND HAS PICS AND ALSO ABOUT ME. PLUS IF WOULD LIKE TO BE ON MAILING LIST, PLUS INCLUDE SOCIA L MEDIA PAGE, BUT TECHNICALLY THAT SHOULD BE ON EVERY PAGE? -->
+      
+      <!--see nav notes on each page. need clarification -->
+      
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">Cat Chat Tarot</a> <!--does href need to be filled here even if redundant?? DUH YEAH. CHANGE FONT TO OREGANO as well. I PUT IN INDEX.HTML, BUT I MAY HAVE TO CHANGE INDEX PAGE TO REPERESENT JUMBOTRON. IS IS SMART TO HAVE JUMBOTRON WITH ONLY NAV, PLAY BUTTON, AND IMAGE AS INDEX PAGE???????????-->
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
+        
+    <!-----WHAT LINK GOES ON CURRENT IF INDEX MAIN? WILL THERE BE A DOUBLE CAT CHAT TAROT? DO I LABEL IT AS HOME? do pics first and come back to this-->    
+   <!--   </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Cat Chat Tarot</a> I STILL DON'T UNDERSTAND WHY THERE'S A HOME ITEM, WHEN TO ME THAT'S PART OF LIST.-->
+      </li>
+      
+        <li class="nav-item">
+        <a class="nav-link" href="tarot.html">Weekly Column</a>
+      </li>  
+        <li class="nav-item">
+        <a class="nav-link" href="play.html">Let's Play!</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="purchase.html">Purchase a Reading</a>
+      </li>
+    <!--  <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li> --got rid of for now, unless do membership only area.-->
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<!--why don't my own tarot pngs come up at all? Did I not properly save? -->
+
+<!--I want button to float near cat hand when screen adjusts and make it magical looking and inviting to press OR "let's play in glowing script and slight ball of color around it, with a glow effect when hover over to get brighter-->
+
+<!--Because I want button to just be over cat paw, no matter what screen size, I can only assume that if position properly with cat photo, and perhaps relative to parent, that it will go in proper place, when cat photo has proper fluid responsive class. BUT IS IT BEST TO POSITION IN JUMBO? SEEMS STUPID QUESTION, BUT I ALMOST WANT BUTTON TO FEEL LIKE MAGICALLY FLOATS AND MOVES WITH CAT AS ADJUST. And so if I did try outside of Jumbo, would have to be in a container that includes jumbotron, BUT WHAT ABOUT NAV, FOOTER? WOULD BUTTON BE AFFECTED BY WHERE GOES DEPENDING ON ENTIRE PAGE??? -->
+
+<!--do i need a separate container, like when Sheldon would add JUM, etc?-->
+<div class="jumbotron jumbotron-fluid"> <!--adding h-100, won't help me here. I need cat to be smaller in mobile. AND WHEN on large screen, button needs padding and placement to go over paw itself.--> <!--should i add text align left class here instead of in css. why both jumbotron & jumbotron fluid? should i delete one?-->
+  <div class="container">
+    <h1 class="display-4">Cat Chat Tarot</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+
+    <a class="btn btn-primary btn-lg" href="play.html" role="button">Let's Play!</a>
+    <!--testing out where to put button so properly floats near cat paw at all times--> <!--plus may add an image in button with circle lights-->
+    <!--putting button within jumbo doesn't go near cat paw properly, and even if adjusted where goes, may be too fixed. PLUS I NEED TO WORK ON LOGO GOING IN PROPER PLACE, in relation to cat.-->
+    
+    <!--SHELDON...can I make a div called button and not affect bootstap button? I get mixed up with buttons that link to action or buttons that link to another page. Obviously read up more and play with. ALSO THE LIGHT RING PNG LOOKS DULL AND SNOOZVILLE. DO own glow effect. -->
+    
+    <!--HOW CAN I MAKE IMG and my own TEXT in same area of button??-->
+
+ </div>
+  
+  <!--from w3schools bootstrap link button: 
+  <a href="#" class="btn btn-info" role="button">Link Button</a>    -->
+    
+  </div><!--this div ends jumbotron container-->
+</div> <!--this div ends jumbotron-->
+    
+<footer>footer with copyright, etc.</footer>
+    
+<!-- I STILL GET CONFUSED AS TO WHICH JQUERY TO GET FROM GOOGLE HOSTED LIBRARIES. I know one is jquery and other ui, but I see a few others -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!--and our js style script always last -->
+    
+    <script src="js/java.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,117 @@
+html, body {
+   height: 100vh; /*is this height messing up my 'let's play page? will it mess up readings if I do a modal, and then a click to see all? BUT THAT'S ONLY IF I ACTUALLY DO THAT TAROT MESSGE STYLE. took out height again as my index page waving cat needs to be responsive without all the blue so long. It's natural w & h is 1000px each. */ /*when i have 100% on height of vh I SEE THAT BOTTOM OF CAT CUT OFF IN WHEN I LOOK AT BORDER HEIGHT OF BODY. SHould i take off background-position bottom? */
+    background-color: #fee5ff; /*this is light pinkish color*/
+    margin: 0;
+} 
+
+
+.display-4 {
+    font-family: 'Oregano', cursive; 
+    color: #FF1166;
+    font-size: 6rem; /* but should I do rem and place font-size in body? */
+
+}
+
+.jumbotron-fluid { /*should i be styling jumbotron or jumbotron-fluid??-->
+    height: 100vh; /* but should i do h-100 as class? when did as class took up whole page, but cat too large on mobile. */
+    height: 100vh; /* w/o this it's straight across wide cut off strip */ 
+    background-color: #082567; 
+    color: white;
+    background-image: url(../img/waving-cat.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+   /* background-position: bottom; /* what is center center? */
+    background-size: contain; /* this made photo resp in good way, although i wonder if it should be a responsive class in html area. now since photo is better, but is too above bottom of page, let's set position */
+     /* is there a bottom center? is it even nec in this case? cat seems centered. BUT NOW THE SCREEN AREA BETWEEN CAT AND BUTTON IS TOO FAR, AND SCREEN HEIGHT ITSELF IS RIDICULOUSLY LONG. PLUS LOOKS NORMAL ON MOBILE AND TOTALLY CUT OFF AND ZOOMED IN ON PC. LIKE RIDICULOUS ZOOM CROP. */ 
+   /* max-height: 100%; NOPE. STILL SAME. *** READ UP ON BOOTSTRAP APPROACH FOR HEIGHTS AND RESPONSIVE AND FLEX THAT ARE SPECIFIC TO BOOTSTRAP. */
+  }
+
+
+
+
+h1 {
+   /* I want fancier that regular text if possible. Oregano too ornate & distracting. */
+/* there will be background color, but don't want this to interfere with index page for moment */
+    color: #FF1166;
+}
+
+.question{
+    padding: 20px;
+    font-size:1rem; /*does this make sense?*/
+    font-weight: bold;
+    font-style: italic;
+    background-color: white;
+}
+
+.answer{
+    padding: 20px 30px;
+    background-color: white;
+}
+
+/*below starts tarot box area that I had created in practice javatest workspace*/
+
+
+#ask{
+    background-color: pink; 
+    padding: 10px; /* why is text not centered if have padding all over box?*/
+    text-align: center;
+  /*  width: 550px; try % */
+/*  width: 100%; /*this makes responsive, but text spills out, and in a way good that width doesn't go all the way across page...I assume form styling in other part of css etc */ /*BUT ONLY RESPONSIVE WHEN NO PIC EMERGING. THE TAROT FRAME IS PROBABLY MESSING UP WHERE NOT RESPONSIVE, BUT I DON'T WANT IT TO SHRINK DOWN ALL THE WAY...SO DO i DO MIN WIDTH? DO DOESN'T SHRINK SO MUCH? OR DO I DO BOOTSTRAP COL SIZE AND KEEP THIS OUT OF HERE? */
+/*  min-width: 75%; this shrinks down way too much just like all of above %ages */
+   /* max-width: 550px; /* added this to play around BUT WHY IS ASK AREA SMALLER UNTIL I HIT TO SHOW CARD AND THEN EXPANDS?? IS IT THAT I ADDED A COL?*/
+    height:65px;
+ /*   display: block; */
+ /*   border: 2px solid red; */
+    font-size: 22px;
+    width: 580px;
+} 
+
+
+#tarotframe {
+  /*  background-color: pink; DO I REALLY NEED COLOR HERE?*/
+ /*   padding: 20px; took out padding. cards large enough */
+ /*   width: 550px;
+    height: 730px; */ /* MUST KEEP DISPLAY NONE OR PIC SHOWS*/
+    display: none;
+/*    border: 2px solid red; */
+ }
+
+/* all 13 tarot pics are 550 W by 730H. accidentally made too large*/
+#image { 
+    margin-left: -8px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 28px;
+    background-color: white;
+}
+
+/*display:none means that the tag in question will not appear on the page at all (although you can still interact with it through the dom). There will be no space allocated for it between the other tags.
+
+visibility:hidden means that unlike display:none, the tag is not visible, but space is allocated for it on the page. The tag is rendered, it just isn't seen on the page. I HAD DISPLAY HIDDEN ON ONE OF ITEMS?? */
+
+#intro{
+    background-color: white;
+    padding: 20px;
+}
+
+#play{
+    background-color: #082567;
+}
+
+#intro-t {
+    background-color: white;
+    padding: 11px 15px 1px 15px;
+}
+
+footer {
+    height: 40px;
+    padding: 10px;   
+}
+
+@media only screen and (min-width:1000px){
+    
+    #look-up {
+        margin-left: 280px;
+    }
+}
+
