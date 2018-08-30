@@ -11,21 +11,13 @@
 $(document).ready(function() {
     $('#ask').click(function(){
         $('#image').fadeIn(3000);
-        $('#tarotframe').slideDown(2000);
+        $('#tarotframe').slideDown(3000);
   });
 });  
 
 var images = [ /* 13 cards in total. I will let querant know how many cards are in the deck so they don't wonder if the got them all. 
 
-// I have better quality and designed images not uploaded into img yet on any workspace, such as cat climb tree. DON'T FORGET KLEA!!!!!
-
- // PLUS EDITING SOFTWARE STILL NOT WORKING AND PIXLR DOWN, SO WILL USE MICROSOFT PAINT TO DO CARDS WITH QUICK MESSAGE. DON'T FORGET TO ALSO put thru tinypng and all cards must have specific meaning...unique...no redundancy
-
-// some card in example below from file of img-need-work. when i have all photos done THERE WILL ONLY BE ONE IMG FILE FOR ENTIRE SITE */
-  
-// also, on javatest workspace, I'd completely shortened img names. do same here when done with ms paint. cards below are so i have an idea of img size and quality etc 
-
-//for images below, don't want them muddying up cards. And seems like a pain in ass to get all of this on img, esp since some photos have asian or arabic names in print/script. SHOULD I JUST ACKNOWLEDGE THAT ALL CARDS IMGS FROM PNGTREE.COM?
+/*for images below, don't want them muddying up cards. And seems like a pain in ass to get all of this on img, esp since some photos have asian or arabic names in print/script. SHOULD I JUST ACKNOWLEDGE THAT ALL CARDS IMGS FROM PNGTREE.COM? */
 
 
   //

@@ -54,14 +54,13 @@
    <!-- Klea, please find ONE STYLE TO DO for all other pages besides landing page for continuity. Not sure if will use same font, but if do, I need it to stand out from jumbotron, and not distract from page design. Color will be same as logo font, though -->
    
    <!--maybe I need to adjust css for container and make sure in proper order?-->
- <div class="container" id="play"> 
+ <div class="container"> 
  
  <h1>Let's Play!</h1>  
  
  <div class="row justify-content-center"> <!--i added justify etc to center tarot reveal area 8/29 1:42pm-->
  <div class="col-12" id="intro-t">
-<!--THE PLAY AREA TOO BIG NOW. SHRINK DOWN CLICKABLE BOX AREA. GET RID OF BORDER, BUT DO HAVE ONE SOLID COLOR FOR CONTAINER. get rid of margin on #image. it's off when in mobile.---->
- 
+
 <p>Think of a question and click below for an action card. Every week, I hand pick 13 different cards, that randomly appear when you click below. Once you get your action card, click again for another question. Once you have gotten your first action card, the cards randomly appear with each new click. Enjoy!!</p>
 
 </div> <!--end of intro div--> <!--because i added an about section, not sure     what this is a part of or if I got rid of intro. Also, even if i have and about page, there should be short explanation of games, with a link back to ABOUT page (for seo) and ease of use-->
@@ -81,15 +80,12 @@
   <div class="col" id="tarot-box"> <!--added cols to this and tarotframe etc. I TOOK OUT SIZES. THEY MESSED UP PHOTO AT IN BET SIZE. TOOK OFF COL SIZE ON TAROT BOX AND TAROT FRAME AREA.-->
   
   <!--AND NOW WILL TAKE OUT IMG SIZE IN CSS AS FLUID NOT WORKING-->
-        <div id="ask">
+        <div class="col" id="ask">
           Click here for your action card!! <!--WORK ON TEXT BEING RESP TO GET SMALLER-->
         </div>
  <!--book says for btsrp to work prop col & row must be inside container. FIGURE THIS OUT-->       
-<div class="col" id="tarotframe">
-   <img id="image" src="img/movie.png" class="img-fluid"> <!--8/29 5:30pm. added img fluid class.  IMG FLUID AWFUL WITH COL SIZES. TRY W/O-->
-
-<!--************ img fluid wasn't working cause spelled wrong. WANT TO CHANGE COLOR TO DARKER TO STAND OUT AND POSSIBLY GET RID OF BORDERS ON PARTS******>
-
+<div class="col mx-auto" style="width: 580px;" id="tarotframe" >
+   <img id="image" src="img/movie.png" class="img-fluid mx-auto d-block" style="width: 500px">
 
 </div>  <!--end of tarotframe-->     
 
@@ -97,24 +93,6 @@
 </div> <!--I ADDDED A ROW SO ADDED EXTRA END DIV. NORMALLY WOULD BE LAST DIV FJY BUT DON'T WANNA MESS UP LAST COMMENT LINE SO DON'T GET MIXED UP-->
 </div> <!--end of container of col/row test. BEFORE ANY COL BOOT ROW LOOKED LIKE BELOW-->
 
-
-
-<!--THIS IS ORIG CONTENT, BUT NOT RESPONISIVE SO ABOVE IS PLAY AREA---->
-<!--tarot box below--> 
-<!--<div id="tarot-box">
-        <div id="ask">
-          Click here for your action card!!
-        </div>
-        
-<div id="tarotframe">
-   <img id="image" src="img/small-lep-cat.png">
-
-</div>  <!--end of tarotframe-- > 
-
-</div> <!--end of tarot box-- TOOK OUT > HERE AND ABOVE TO DUMMY OUT
-
-</div> <!--end of container -->
-<!--THE ABOVE IS ORIG OF PAGE, BUT WASN'T RESPONSIVE----------->
 
 
 
@@ -125,17 +103,9 @@
 
 <!--KLEA-------FOOTER MUST STAY ON BOTTOM. PLEASE FIX----------->
 
-<!--footer will have to be uniform with all footers. should i contain in main container page? should i just have footer div, w/o colums, rows? It should be balance with nav  bar IMO-->
-
-<!--I assume MY PAGE TOO BIG WHICH IS WHY FOOTER GOES TO TOP AT TIMES. CHECK OUT:  CSS "Always on the bottom" Footer
-A PEN BY Chris Bracco
-
-https://codepen.io/cbracco/pen/zekgx
-
-
 <!--<div class="row w-100 p-1"> 
  <div class="col-12">  -->
-  <footer>footer with copyright, etc.</footer> 
+  <footer class="footer">footer with copyright, etc.</footer> 
  </div>
 <!--</div>-->
 
