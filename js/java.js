@@ -16,7 +16,7 @@ $(document).ready(function() {
 var images = [ /* 16 cards in total as of 9/5. Prefer to have more selection for guests. Don't care if random sometimes displays similar cards in a row. That would make me want to stay on longer to see which other cards there...if I liked what I saw and didn't feel duped */
 
 /*for images below, don't want them muddying up cards. And seems like a pain in ass to get all of this on img, esp since some photos have asian or arabic names in print/script. SHOULD I JUST ACKNOWLEDGE THAT ALL CARDS IMGS FROM PNGTREE.COM? */
-
+/* img all 550W x 730H font used in pixler: Sitka Text */
 
   //
   "img-t/gray.jpg", // also, I made this 'smooth' in c9 editing. Graphics from  <a href="https://pngtree.com/freepng/cute-sleeping-cat_1462582.html">pngtree.com</a>
