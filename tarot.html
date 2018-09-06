@@ -25,16 +25,14 @@
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="tarot.html">Weekly Column<span class="sr-only">(current)</span></a> <!--sheldon said i can get rid of span current area so that nav list is in same order on each page. when done, just copy and paste order on each file-->
-   <!--   </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Cat Chat Tarot</a> I STILL DON'T UNDERSTAND WHY THERE'S A HOME ITEM, WHEN TO ME THAT'S PART OF LIST.-->
+
       </li>
         <li class="nav-item">
         <a class="nav-link" href="about.html">About</a>
       </li>      
-      
+
+      <li class="nav-item active">
+        <a class="nav-link" href="tarot.html">Weekly Column<span class="sr-only">(current)</span></a>      
       
         <li class="nav-item">
         <a class="nav-link" href="play.html">Let's Play!</a>
@@ -54,28 +52,44 @@
 </nav>
 <!--below is starting Shelon's lesson on layout June 21st. I will adjust to my needs after done. only doing this on tarot.html for now. -->
 
-<div class="container"> <!--took out fluid. to wide for info contained-->
+<div class="container content" style="background-color: #ffebe0"> <!--took out fluid. to wide for info contained--> <!--9/4 putting this above nav to see what happens. yuck. ruins nav. shrinks down and seems like even if make fluid will have to deal with rest of page sizing. Put back under nav bar.-->
     
     <div class="row text-center"> 
         <div class="col-12"> <!-- I don't need to put col-12 as this is default, but seems like can do both ways. Is it best to include?-->
         <h1>Weekly Tarot Column</h1>  
         </div> <!--ends col-->
     </div> <!--end of row for h1-->
+    
+    <!--#################################-------------------->
+    
+<!--9/4 having issues properly placing all on page responsively. this doesn't inlcude header...only intro, pic, q & a.-->    <!--is this messed up cause in a container? I click on box and whole top div is outlined-->
 
-<!--REMEMBER, FOR INTRO have 1 row 2 col-->
-
-    <div class="row justify-content-center">
-    <div class="col-sm-6 col-md-4 pt-3 col-lg-6 mx-auto" style="background-color:white;">
-      <p>Welcome to Cat Chat Tarot's Weekly Tarot Column. Every week I pick a question from our readers and offer my insight, based on a simple three card spread. Due to copyright issues, I am not allowed to show the cards here, but the advice is the reason you're here, so let's get started! </p>
+<!----- TOOK CONTENT CLASS OUT OF NAV BAR. NAV BAR IS NOT A CONTAINER...IS PART OF CONTAINER. AFTER FIX THIS PAGE, CORRECT ON REST OF PAGES. 9/4-->    
+ 
+ <div class="row p-3">
+    <div class="col mx-auto p-2" style="background-color:white">
+      <p>Welcome to Cat Chat Tarot's Weekly Tarot Column. Every week I pick a question from our readers and offer my insight. Due to copyright issues, I am not allowed to display the cards, but the advice is the reason you're here, so let's get started! </p>
       
-      <p>If you're looking for a personalized and more substantial tarot reading, click <a href="purchase.html">here</a> to purchase a reading from me. I offer a variety of spreads and prices. If you'd like to be added to my grab bag for my free weekly reading, please email me, and know that once the week is over, I start choosing questions again from scratch. Thank you.</p>
+      <p>For a personalized reading, click <a href="purchase.html">here</a>. To be considered for a weekly reading, please email me with your question at <a href="#">catchat@gmail.com</a>.</p>
+</div>
+</div>
 
-      
-    </div>
+<!--TRYING TO SIZE GIRL AND QUESTION BOX--->
+    <div class="row"> <!--I DON'T WANT THIS ROW TO INCLUDE ANSWER-->
+    
+  <div class="col-sm-12 col-md-6 col-lg-6"> <!--this is from tarot2 and replaces line above in comments--> <!--added mx-auto. not sure if smart-->
+      <img src="img/cartoon-girl-cat-blue.2.png" alt="cartoon sketch of girl with cat on head" class="img-fluid d-inline-block mx-auto p-2">
+       </div>
+
+<div class="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center"> <!--when get to look better can I clean up or get rid of some css? AND LOOKS CRAPPY SMALL. DO FLEX WRAP OR BETTER COL DEFINITION-->
+
+  <!--I AM NOT LOVING HOW QUESTION VEERS TO RIGHT. WANT TO SLIGHTLY ADJUST, BUT NOT SURE HOW TO DO YET. SEEMS LIKE SEVERAL WAYS TO DO-->
+     <p class="question p-3"><span style="font-weight:600; font-size:22px; color:#FF1166;">Dear Klea:</span><br>I am currently an interior designer, working under a large, successful company. I've been wanting to venture out on my own, but am afraid of failing. What if I run out of money and can't pay my mortgage? Or have clients who don't pay me for my work? The thought of having to deal with lawyers and being the main boss terrifys me. I don't want to lose my home or my mind! What do the cards see? <br><br>
    
-   <div class="col-sm-6 col-lg-6"> <!--this is from tarot2 and replaces line above in comments-->
-       <img src="img/cartoon-girl-cat-blue.png" alt="cartoon sketch of girl with cat on head">
-      </div> <!--assume don't need col-12?-->
+       -Cheryl D. </p>
+   
+</div> <!--this is end of girl and q box----->
+
 </div>  <!--is THIS actual end of container and just don't realize it?-->
 
 
@@ -84,16 +98,10 @@
 <!-----------start of tarot reading for guest------------>
 <!-- BE AWARE THAT I MAY HAVE #question. don't want to mix up with .question here-->
 
-<div class="row">
-    <div class="col">
-       <h2 style="color: #FF1166">Free Weekly Reading from Grab Bag</h2> 
-       
-       <p class="question"> Q: I am currently an interior designer, working under a large and very successful company. I have been wanting to venture out on my own, but fear the repurcussions of owning my own business. What if I run out of money and can't pay my mortgage? Or have clients who don't pay me for my work? The thought of having to deal with lawyers and being the main boss terrifys me. I don't want to lose my home or my mind! What do the cards see? -Cheryl D. </p>
+<div class="row p-3">
 
-<!--took out more button. This is not long enought to merit a read more, plus this column will balance out the tarot reveal card section next to it on tablet and PC size-->
-       
-      <div class="col answer">
-        <p>Cheryl, you could easily lose your home if you get fired from your current job, so let's not CATastrophize the situation. Let's not focus on the money part, as the cards point to an issue that you have put on the back burner for quite some time.</p>
+      <div class="col answer p-3"> <!--QUESTION SPILLS OUT OF BOX--->
+        <p>You could easily lose your home if you get fired from your current job, so let's not CATastrophize the situation. The cards show that money is not the issue; there's an issue that you've been avoiding for quite some time.</p>
           
         <p>I see that you are quite organized in your life, but that you are still living in an 80's mindset. You choose not to be tech-savvy, which slows you down, whether at work or at home. How much more efficient would you be if you took a class on basic computer skills, and then upped it a notch every few months? Say, taking a class on photoshop or an indepth class on (grumbling) Windows 10? If you learn mundane, but usesful information in a more relaxed manner, your self-esteem will shoot up trememdously and you won't have to wait a month before your tech-savvy friend can help you or pay and arm and a leg for something that took 5 minutes to fix.</p>
 
@@ -116,18 +124,15 @@
 </div> <!--end of container div-->
 
 
-</div>  
 
 
 
 
 
-
-<!--<div class="row w-100 p-1"> 
- <div class="col-12"> -->
-  <footer>footer with copyright, etc.</footer> 
-<!-- </div>
-</div>
+<!----FOOOTER IS CUT OFF SINCE TOO MUCH CONTENT. PROBABLY SHOULD NOT HAVE BODY HEIGHT OF 100% IN MAIN CSS ****************************------->
+<div class="row">
+  <footer class="col footer">Cat Chat Tarot Inc. are copyrighted by Klea Kostopoulos 2018</footer> 
+</div><!--end of row for footer-->
     
 <!-- I STILL GET CONFUSED AS TO WHICH JQUERY TO GET FROM GOOGLE HOSTED LIBRARIES. I know one is jquery and other ui, but I see a few others -->
 

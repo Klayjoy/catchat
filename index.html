@@ -21,8 +21,8 @@
       
       <!--see nav notes on each page. need clarification -->
       
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index.html">Cat Chat Tarot</a> <!--does href need to be filled here even if redundant?? DUH YEAH. CHANGE FONT TO OREGANO as well. I PUT IN INDEX.HTML, BUT I MAY HAVE TO CHANGE INDEX PAGE TO REPERESENT JUMBOTRON. IS IS SMART TO HAVE JUMBOTRON WITH ONLY NAV, PLAY BUTTON, AND IMAGE AS INDEX PAGE???????????-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light content">
+  <a class="navbar-brand" href="index.html">Cat Chat Tarot</a> <!--does href need to be filled here even if redundant?? DUH YEAH. CHANGE FONT TO OREGANO as well. don't do fancy font. it should be easy to see and read.-->
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -31,14 +31,20 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
+      <!--  <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a> --per Sheldon, can get rid of this span and then past nav list in each page. The 'current' span forces me to adjust the order of list, BUT I'M REALIZING THAT ALL I HAVE TO DO IS KEEP LIST SAME, BUT PLACE SPAN LINK ON THAT ACTUAL ITEM ON EACH HTML PAGE-->
+      
+    <!-- GOT RID OF THIS, BUT KEEP THIS AS TEMPLATE FOR OTHER PAGES. INDEX PAGE ALREADY HAS A STYLING TO STAND OUT. REGULAR LINKS DON'T. USE this span to style other links:      <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
         
-    <!-----WHAT LINK GOES ON CURRENT IF INDEX MAIN? WILL THERE BE A DOUBLE CAT CHAT TAROT? DO I LABEL IT AS HOME? do pics first and come back to this-->    
+    <!-----WHAT LINK GOES ON CURRENT IF INDEX MAIN? WILL THERE BE A DOUBLE CAT CHAT TAROT? yes, you end up with 2 repeat links->    
    <!--   </li>
+   
       <li class="nav-item">
         <a class="nav-link" href="#">About Cat Chat Tarot</a> I STILL DON'T UNDERSTAND WHY THERE'S A HOME ITEM, WHEN TO ME THAT'S PART OF LIST.-->
+        
       </li>
-      
+        <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>      
         <li class="nav-item">
         <a class="nav-link" href="tarot.html">Weekly Column</a>
       </li>  
@@ -59,7 +65,6 @@
   </div>
 </nav>
 
-<!--why don't my own tarot pngs come up at all? Did I not properly save? -->
 
 <!--I want button to float near cat hand when screen adjusts and make it magical looking and inviting to press OR "let's play in glowing script and slight ball of color around it, with a glow effect when hover over to get brighter-->
 
@@ -69,15 +74,13 @@
 <div class="jumbotron jumbotron-fluid"> <!--adding h-100, won't help me here. I need cat to be smaller in mobile. AND WHEN on large screen, button needs padding and placement to go over paw itself.--> <!--should i add text align left class here instead of in css. why both jumbotron & jumbotron fluid? should i delete one?-->
   <div class="container">
     <h1 class="display-4">Cat Chat Tarot</h1>
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    <p class="lead">Using the wisdom of cats to enlighten our path.</p>
 
     <a class="btn btn-primary btn-lg" href="play.html" role="button">Let's Play!</a>
     <!--testing out where to put button so properly floats near cat paw at all times--> <!--plus may add an image in button with circle lights-->
     <!--putting button within jumbo doesn't go near cat paw properly, and even if adjusted where goes, may be too fixed. PLUS I NEED TO WORK ON LOGO GOING IN PROPER PLACE, in relation to cat.-->
     
-    <!--SHELDON...can I make a div called button and not affect bootstap button? I get mixed up with buttons that link to action or buttons that link to another page. Obviously read up more and play with. ALSO THE LIGHT RING PNG LOOKS DULL AND SNOOZVILLE. DO own glow effect. -->
-    
-    <!--HOW CAN I MAKE IMG and my own TEXT in same area of button??-->
+<!--------9/4. now that added content to nav class and footer class, I want to get rid of space. can try overflow or just add color, but don't want cat to look like cropped in odd place********* should I even make container larger???---------------->
 
  </div>
   
@@ -87,7 +90,7 @@
   </div><!--this div ends jumbotron container-->
 </div> <!--this div ends jumbotron-->
     
-<footer>footer with copyright, etc.</footer>
+<footer class="footer">Cat Chat Tarot Inc. are copyrighted by Klea Kostopoulos 2018</footer>
     
 <!-- I STILL GET CONFUSED AS TO WHICH JQUERY TO GET FROM GOOGLE HOSTED LIBRARIES. I know one is jquery and other ui, but I see a few others -->
 

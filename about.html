@@ -16,7 +16,7 @@
   </head>
   <body>
       
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!--9/3 I HAD PUT CLASS OF CONTENT ALTERNATEVLIY BOTH HERE AND CONTAINER. THEY SEEMED THE SAME UNTIL I HAD PAGE ON LARGE SCREEN, BUT SLIGHTLY SMALLER AND NAV LOOKED SQUISHED. SO PUT IT HERE & IN SAME SIZE BOX NAV LOOKED PERFECT AS DID FOOTER. HOPEFULLY WILL WORK WITH OTHER PAGES, ALTHOUGH MAY HAVE TO SHRINK DOWN TEXT AMOUNTS AND IMG--> 
   <a class="navbar-brand" href="index.html">Cat Chat Tarot</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -26,11 +26,7 @@
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
         <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
-   <!--   </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Cat Chat Tarot</a> I STILL DON'T UNDERSTAND WHY THERE'S A HOME ITEM, WHEN TO ME THAT'S PART OF LIST.-->
       </li>
-      
         <li class="nav-item">
         <a class="nav-link" href="tarot.html">Weekly Column</a>
       </li>  
@@ -50,33 +46,38 @@
     </form>
   </div>
 </nav>
-   
-   <!-- Klea, please find ONE STYLE TO DO for all other pages besides landing page for continuity. Not sure if will use same font, but if do, I need it to stand out from jumbotron, and not distract from page design. Color will be same as logo font, though -->
-   
 
- <div class="container"> 
+ <div class="container content" style="background-color:#ffebe0"> <!--I had put content class in nav to test, and because page a bit short nav bar ugly and 
  
  <!--the h1 below is not in it's own div. I feel like I've seen both ways. What's best?-->
  <h1>About Cat Chat Tarot!</h1> 
- 
- <div class="container">
- <div class="row">
- <div class="col-12" id="intro"> 
- <p>Welcome to Cat Chat Tarot; a light and fun divination website. Cat Chat Tarot is a vehicle for my tarot readings. I have been doing tarot readings on the side, as a hobby for more than twenty years and have decided to take my readings public. </p>
 
- <p> Although I do not publish my tarot readings online, I thought it would be fun to have pre-loaded games that change weekly. If you would like to purchase a reading, I offer a variety of tarot readings styles, which can be purchased <a href ="purchase.html">here</a>. Thank you.</p>
+ <div class="row p-2">
+ <div class="col-12" id="intro"> 
+ <p>Welcome to Cat Chat Tarot; a vehicle for my tarot readings. I have been doing tarot readings as a hobby for more than twenty years and have decided to take my readings public. I exclusively use a tarot deck called: Mystical Cats Tarot, which incorporates the traditional tarot deck with a cat twist. I was endeared to this deck, because the cats featured in the deck are based on actual cats.</p>
+
+ <p>I really enjoy using this deck. If you are curious about Mystical Cats Tarot, you can check out their website <a href="http://www.mysticalcatstarot.com/index.html">here.</a> It's the only deck I use for divination these days. I have used the deck enough to incorporate my own card meanings.</p>
+
+ <p> Although I do not publish my tarot readings online, I thought it would be fun to have a game where one can ask themselves a question, click on a button, and get an action card. You can find this game, on the <a href="play.html">Let's Play</a> page.</p>
+
+<!-- WHEN duplicated above PARA to add more text, ALONG WITH PUTTING CONTENT CLASS IN NAVBAR, LOOKED BETTER, OTHERWISE IF CONTENT CLASS IN CONTAINER, UGLY THICK NAV BAR. But once I added padding to pic top/bottom and added one extra line of text, page looked great, whether CONTENT CLASS in nav or container. Just leave in CONTAINER. Although content, technically includes nav bar, I want that to always be proper size and not glitchy.  -->
+
+<!--THE NAV BAR IS SQUISHED. 9/3 RIGHT BEFORE CLOSING OUT, HAD ON LARGE SCREEN, BUT A BIT SMALLER FRAME AND NAV SQUISHED ON TOP, EVEN WHEN SLIGHTLY SHRUNK PADDING ON TAROT CARDS IMG-->
+ 
+ <p>If you would like to purchase a reading, I offer a variety of tarot readings styles, which can be purchased <a href ="purchase.html">here</a>. Thank you!</p>
 
 </div> <!--end of intro div-->
-
+<!--rename the id of look-up since I'm replacing look up cat with cards ******************-->
 <div class="col"> 
-<img src="img/look-up.1.png" alt="cat looking up" id="look-up" class="img-fluid"  > <!--instead of doing media q or trying to position, should I do ml margin left from bootstrap SPACING?-->
+<img src="img/mct.1.jpg" alt="scattered tarot cards" id="look-up" class="img-fluid mx-auto d-block p-3"> 
+
 </div> 
 
 </div> <!--end of row?-->
 </div> <!--end of container -->
 
 
-<footer>this is footer</footer>
+<footer class="footer">Cat Chat Tarot Inc. are copyrighted by Klea Kostopoulos 2018</footer>
 
 
     

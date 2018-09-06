@@ -15,8 +15,8 @@
     <title>Purchase a Reading.</title>
   </head>
   <body>
-      <!--I DON'T UNDERSTAND NAV (Current). I'm not on that page. SHOULD EACH PAGE BE ADJUSTED? yes-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
   <a class="navbar-brand" href="index.html">Cat Chat Tarot</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -24,16 +24,7 @@
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="purchase.html">Purchase a Reading<span class="sr-only">(current)</span></a>
-        
-        <!-- because the above li item says CURRENT, SHOULD I ADJUST NAV LINKS AND PUT PURCHASE LINK IN HERE, SINCE THAT'S THIS IS NAV AREA OF PURCHASE PAGE? -->
-        
-     </li>
-     <!--
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Cat Chat Tarot</a> I STILL DON'T UNDERSTAND WHY THERE'S A HOME ITEM, WHEN TO ME THAT'S PART OF LIST.-->
-   <!--   </li -->
+
         <li class="nav-item">
         <a class="nav-link" href="about.html">About</a>
         </li>  
@@ -43,9 +34,10 @@
         <li class="nav-item">
         <a class="nav-link" href="play.html">Let's Play!</a>
       </li>
-    <!--  <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li> --got rid of for now, unless do membership only area.-->
+      <li class="nav-item active">
+        <a class="nav-link" href="purchase.html">Purchase a Reading<span class="sr-only">(current)</span></a>
+     </li>      
+
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search">
@@ -53,159 +45,108 @@
     </form>
   </div>
 </nav>
-<div class=".container-fluid"> <!-- I hate container fluid for all of page. Not only does it get cut off and seem more complicated to style, but I don't want full page across for most of site. GOING TO DO TOP AS CONTAINER-FLUID AND ALL BELOW IN SEPARATE CONTAINER AND SEE HOW LOOKS-->
-  
-    <div class="row text-center">
-        <div class="col-12">
+
+ <!--ADDING CONTAINER WITH CLASS OF CONTENT below TO BALANCE OUT FOOTER (AND ADD LIGHT ORANGE COLOR IN BACKGROUND). THE WAY IS IN ABOUT PAGE WITH I LIKE-->
+ <!--adding the same style as ABOUT page didn't work in this case, as nav bar small and squished and footer doesn't go across as does in ABOUT-->
+ <div class="container content" style="background-color:#ffebe0">
+ 
+    <div class="row"><!--took text-center off of row and place in col area-->
+        <div class="col-12 text-center">
         <h1>Purchase a Reading</h1>  
         </div>
-   
-<div class="col-sm-6 col-md-12 col-lg-12" style="background-color: #082567;" >
-<img src="img/holding-cards.jpg" alt="hand holding up tarot cards" class="img-fluid"> <!--this img too small on smaller size & may need to size content a bit-->
+
+<div class="col" style="background-color: #57509e;">  <!--don't love this color, but any other color or shade I tried was just ok. leave htis darker since makes picture pop more and matches dark color of index page-->
+<img src="img/holding-cards.jpg" alt="hand holding up tarot cards" class="img-fluid mx-auto d-block"> 
  </div>
-</div> <!--End of row with h1 and img. I put in same area, because img naturally floated to center. When put in it's own row went flush to one side, which might help me with Marty's column-->
+ </div> <!--end of row, which includes heading and card photo-->
 
-
-<!--the image looks funny at 690px or so-->
-
-<!--the faq will have to be adjusted about discounts as I've changed prices-->
-
-<div class="row" style="padding:15px 40px;"> <!--will have to do padding a la bootstrap-->
-  <div class="col-sm-8 col-md-10 col-lg-10" >
+<div class="row p-2">
+  <div class="col pt-3" style="background-color:white"><!--got rid of all col sizes for now-->
   <p>Thank you for visiting my website, Cat Chat Tarot. I hope that you enjoyed the free weekly reading as well as the random card generator in the play area.</p> 
   
-  <p>I have been reading tarot cards for most of my adult life, and offer a variety of reading styles and prices. I prefer writting out my readings, as opposed to in person or via Skype. I have always prefered to take my time with a reading while alone in thought, and focus more on the psychology aspect rather than the fortune telling aspect. In fact, I hate anything to do with predictions, as I feel life is flexible and prefer a reading that provides insight into a question.</p> 
+  <p>I offer a variety of reading styles and prices. I prefer writting out my readings, as opposed to in person or via Skype. I have always prefered to take my time with a reading while alone in thought, and focus more on the psychology aspect rather than the fortune telling aspect. In fact, I hate anything to do with predictions, as I feel life is flexible and prefer a reading that provides insight into a question.</p> 
   
   <p>Below the frequently asked questions, you will find a list of reading types and prices. If you need further assistance, do not hesitate to contact me. Thank you.</p>
  </div>
-</div>  
+</div> <!--end of row--> 
 
-<div class="row" style="padding:15px 40px;">
-  <div class="col-sm-8 col-md-10 col-lg-10">
-<h2>Tarot Readings and Prices:</h2>
+<div class="row p-2">
+<div class="col">
+<h2 class="p-1">Tarot Readings and Prices:</h2>
+<!-- </div>
+ </div><!--after got rid of items on page I saw that 2 end divs missing here. was I trying to combine with faq and form? IS THIS WHY MY FOOTER WON'T EXPAND ACROSS PAGE?--> <!--SO NOW THAT ADDED THESE 2 END DIVS HOW DOES PAGE LOOK? PLUS I MAY HAVE EXTRA UNNECC DIVS LATER ON 9/4--> <!--I HAVE A FEELING I WAS TRYING TO PUT ALL IN ONE COL. ALL LOOKS SAME. DUMMY OUT AGAIN, BUT CHECK FORMS-->
+ 
+ 
+<!---had a price list group from bootstrap that seemed too complex/unnec for this, so simplifed to list-group and list-group-item. esp since seemed stupid to have a space to type in prices, when already listed. plus styling for bootstrap list seemed too complex. start simple----------------->  
 
+<ul class="list-group p-2"> 
 
-
-<!--------this was added to test out form from bootstrap----------------->  
-
-<ul class="list-group">
+  <li class="list-group-item"><span style="font-weight:600; font-size:18px">Deluxe Reading:</span> Includes a 12 month spread and birthday month bonus <span style="font-weight:600">
+  - $150</span></li>
   
-  
-  <!--Reading 1--->
-  <li class="list-group-item"><span style="font-weight:bold">Deluxe Reading:</span> Includes a 12 month spread and birthday month bonus </li>
-  <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text">$</span>
-    <span class="input-group-text">150.00</span>
-  </div>
-  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-</div> 
-   <!--end of reading 1--->
-  
-  <!--Reading 2--->
-  <li class="list-group-item"><span style="font-weight:bold">Relationship Reading:</span> In-depth looking into one relationship, whether with a romantic partner or non-romantic relationship.</li> <!--PLEASE RE-WORD THIS. SOUNDS STUPID-->
-  <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text">$</span>
-    <span class="input-group-text">80.00</span>
-  </div>
-  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-</div> 
-  <!--end of reading 2--->
-  
-<!--Reading 3-->  
-  <li class="list-group-item"><span style="font-weight:bold">Two-Question Combo:</span>Two questions, whether they are related to one issue or two completely different topics. </li>
-  <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text">$</span>
-    <span class="input-group-text">60.00</span>
-  </div>
-  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-</div>  
- <!--end of reading 3--->
 
-<!--beginning of reading 4--->
-  <li class="list-group-item"><span style="font-weight:bold">Celtic Cross Spread:</span>Traditional spread, which never goes out of style.</li>
-  <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text">$</span>
-    <span class="input-group-text">35.00</span>
-  </div>
-  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-</div>   
-  <!--end of reading 4 ----->
-  
-  <!--beg of reading 5 ----->  
-  <li class="list-group-item"><span style="font-weight:bold">Three Card Drawd:</span>Three cards focusing on following topics: issue, energy above it, and action to be taken.</li>
-  <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text">$</span>
-    <span class="input-group-text">15.00</span>
-  </div>
-  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-</div>
+  <li class="list-group-item"><span style="font-weight:600; font-size:18px">Relationship Reading:</span> Whether with a romantic or platonic.<span style="font-weight:600">
+  - $80</span></li> 
 
-<!--end of reading 5 ----- FINAL ITEM ON LIST ---->
+  <li class="list-group-item"><span style="font-weight:600; font-size:18px">Two-Question Combo:</span>Two questions, whether they are related to one issue or two completely different topics.<span style="font-weight:600">
+  - $60</span></li>
+
+
+  <li class="list-group-item"><span style="font-weight:600; font-size:18px">Celtic Cross Spread:</span>Traditional spread, which never goes out of style.<span style="font-weight:600">
+  - $35</span></li>
+
+
+  <li class="list-group-item"><span style="font-weight:600; font-size:18px">Three Card Draw:</span>Three cards focusing on following topics: issue, energy above it, and action to be taken.<span style="font-weight:600">
+  - $15</span></li>
 
 </ul>
+<!--dummy out. I have too many sub-divisions that seem to overlap and may be the reason my FOOTER stays contained, unlike ABOUT page etc-->
+<!--<div class="row">
+  <div class="col"> -->
 
-
-<!---------end of test area. the above will also include a bootstrap list just to see how looks and give entire site a feel------------>
-  
-
-
-<!--beginning of FAQ -->
-
-<div class="row" style="padding:15px 40px;">
-  <div class="col-sm-8 col-md-10 col-lg-10">
-
-<h2>FAQ</h2>
-
+<h2 class="p-1">FAQ</h2> 
 <ol>
-  <li><span style="font-weight:bold;">What type of payments do you take?</span> <br> At this point I only accept PayPal, but I am working on accepting other payments down the road.
+  <li><span style="font-weight:600; font-size:17px">What type of payments do you take?</span> 
+  <p> At this point I only accept PayPal, but I am working on accepting other payments down the road.</p>
   </li>
   
-  <li><span style="font-weight:bold;">What kind of questions should I ask? What if I have a 2-part question. Is that extra money?</span>Depending on the reading that you purchase, it is one question per reading, but if the second question clarifies the main question I include it, as it gives the reading a more cohesive feel.</li>
+  <li><span style="font-weight:600; font-size:17px">What if I have a 2-part question. Is that extra money?</span>
+  <p> Depending on the reading that you purchase, it is one question per reading, but if the second question clarifies the main question I include it, as it gives the reading a more cohesive feel.</p></li>
   
-  <li><span style="font-weight:bold;">Do I receive my reading via email or is it printed and mailed to me?</span></li>
+  <li><span style="font-weight:600; font-size:17px">Do I receive my reading via email or can I have it mailed to me?</span>
+  <p>Either are fine. Just let me know.</p></li>
   
-  <li><span style="font-weight:bold;">How long does it take to receive my reading?</span>I generally work on requests within two days of receiving them via email, and then I corespond with querent so as to clarify their question. It is very important to ask a simple and properly stated question. I also refuse to do anything that has a fortune telling or predictive element to it.</li>
+  <li><span style="font-weight:600; font-size:17px">How long does it take to receive my reading?</span>
+  <p>I generally work on requests within two days of receiving them via email, and then I corespond with querent so as to clarify their question. It is very important to ask a simple and properly stated question. I also refuse to do anything that has a fortune telling or predictive element to it.</p></li>
   
-  <li><span style="font-weight:bold;">Do I get a discount if I purchase more than one reading?</span>I offer a 10% discount for the all the top-tier readings, with a price-point of $30 or more. The basic $15 dollar readings are not discounted.</li>
-  
-  <li><span style="font-weight:bold;">Is my email address sold to marketers if I order a reading?</span>Absolutely not! Any communication we share for a reading is private and only kept in my files for my own records. For example, if I am having a special promotion, I am able to email you; or if you lose a reading, I can look it up and resend it. Please understand that after one year, I cannot guarantee that I will still have your reading on file.</li>
-</ol>
+  <li><span style="font-weight:600; font-size:17px">Do I get a discount if I purchase more than one reading?</span>
+  <p>I offer a 10% discount for readings, with a price-point of $60 or more.</p></li>
 
-<!--putting this in to make sure javascript etc linked properly. Looks like works, but I want more info.-->
-
-
-<!-------------------playing to add better form that already has button disclaimer and has no sign in button, although I could probably get rid of that. Also checking out to see how price form looks, but won't be doing that--->
-
-
-
-
-
-
-
-
-
-
-
-
-<!--------------------this ends new test form area of better form or form that has money-------------->
-
-
-
-<!--I will not be using this form. I will do email and a check box that client/querent understands that this is only for ENTERTAINMENT PURPOSES-->
-
+<!--9/4 I left old notes here. The form-check from bootstrap was fine, but when I'd added paras and spans etc., there was probably a glitch and THAT'S WHY THE </label> STAYED UNDERLINED IN RED. IT'S NOW GONE.-->
+<!--9/4 &&&&&& COPY CHECK BOX AREA BELOW SO CAN PLAY WITH. MAKES NO SENSE TO SEE </label> UNDERLINED IN RED, AND MAYBE EXTRA CLASSES DON'T NEED HERE
 <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
   <label class="form-check-label" for="defaultCheck1">
-    <span style="font-weight:bold;"> By clicking this box, I understand that any readings created and emailed or mailed by Klea Kostopoulos or Cat Chat Tarot are soley for entertainment purposes. I am not responsible for any events or coincidences that might coincide with my readings, such as a job loss or any other unfortunate event. Once I click on this button, I understand that my reading is purely for entertainment purposes. Klea Kostopoulos and Cat Chat Tarot are not liable for any monetary losses either. <br><br>THERE ARE NO REFUNDS on readings. I have my own point of thought for readings and write what feels right, regardless of if the querent agrees with me. Once again, any readings are for entertainment purposes only. Thank you.
-  </label> <!--I got rid of disabled check box-->
+    <span style="font-weight:500; font-style:italic"><p> By clicking this box, I understand that any readings created and emailed or mailed by Klea Kostopoulos or Cat Chat Tarot are soley for entertainment purposes. I am not responsible for any events or coincidences that might coincide with my readings, such as a job loss or any other unfortunate event. Once I click on this button, I understand that my reading is purely for entertainment purposes. Klea Kostopoulos and Cat Chat Tarot are not liable for any monetary losses either.</p> <p><span style="font-weight:600">THERE ARE NO REFUNDS</span> on readings. I have my own point of thought for readings and write what feels right, regardless of if the querent agrees with me.  Thank you.</p>
+  </label> <!--I got rid of disabled check box--> <!--why is this underlined in red? LOOK INTO AFTERWARDS. NOT WORST PROB AT THIS POINT 
+ </div> <!--this div ends the form-check box. &&&&&&&&& END OF COPIED AREA IN CASE I MESS UP THE COPIED CODE TO PLAY WITH BELOW-->
+
+<!--9/4 &&&&&& COPY CHECK BOX AREA BELOW SO CAN PLAY WITH. MAKES NO SENSE TO SEE </label> UNDERLINED IN RED, AND MAYBE EXTRA CLASSES DON'T NEED HERE---->
+
+<!--THIS BEGINS CHECK BOX for terms-->
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    <span style="font-weight:500; font-style:italic;">By clicking this box I agree to the following terms: <br>
+    
+    <p class="pt-2 pl-3 pr-3">I understand that any readings created and emailed or mailed by Klea Kostopoulos or Cat Chat Tarot are solely for entertainment purposes. I am not responsible for any events or coincidences that might coincide with my readings, such as a job loss or any other unfortunate event. Once I click on this button, I understand that my reading is purely for entertainment purposes. Klea Kostopoulos and Cat Chat Tarot are not liable for any monetary losses.</p>
+    
+    <p class="pt-2 pl-3 pr-3"><span style="font-weight:600">Readings are NON-REFUNDABLE</span>. Readings are based on my interpretation of what I see in the cards. Sometimes a reading will not make sense until down the line, may actually be for someone close to you (and I picked up on it), and as always, there will always be a reading that you may not be excited about, but I always give my honest interpretation. Thank you.</p>
+    </span>
+  </label>
 </div>
 
-
+<!--BELOW STARTS FORM FOR EMAIL AND ADDRESS. IS SEP FROM CHECK BOX------>
 
 <form>
   <div class="form-row">
@@ -256,9 +197,16 @@
 
 
 
-</div> <!--end of container-fluid div? I got mixed up.-->
+</div> <!--end of container-fluid div? I got mixed up. WHY IS THIS NOW RED-UNDERLINE. I HAD JUST SOLVED RED-UNDERLINE OF CHECK BOX. IF I DELETE THIS, COLS GET SUPER NARROW. LEAVE FOR NOW. MAIN THING IS WHY FOOTER SO SHORT, COMPARED TO ABOUT PAGE, ETC. 9/4-->
 
-<footer>Cat Chat Tarot is a trademarked....etc etc 2018.</footer>
+</div><!--end of container div, which includes class of CONTENT 9/3-->
+
+
+
+<div class="row"> <!--why doesn't this go all the way across like ABOUT and TAROT do?-->
+<footer class="col footer">Cat Chat Tarot Inc. are copyrighted by Klea Kostopoulos 2018</footer> 
+</div><!--end of row for footer-->
+
 
 <!--ADD INPUT BUTTON, AND A CHECK MARK THAT " I UNDERSTAND THIS IS FOR ENTERTAINMENT PURPOSES ONLY AND NOT RESPONSIBLE FOR ANY LOSSES ETC ETC....-->
     

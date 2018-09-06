@@ -1,9 +1,41 @@
 html, body {
-   height: 100vh; /*is this height messing up my 'let's play page? will it mess up readings if I do a modal, and then a click to see all? BUT THAT'S ONLY IF I ACTUALLY DO THAT TAROT MESSGE STYLE. took out height again as my index page waving cat needs to be responsive without all the blue so long. It's natural w & h is 1000px each. */ /*when i have 100% on height of vh I SEE THAT BOTTOM OF CAT CUT OFF IN WHEN I LOOK AT BORDER HEIGHT OF BODY. SHould i take off background-position bottom? */
+    /*is this height messing up my 'let's play page? , and then a click to see all? BUT THAT'S ONLY IF I ACTUALLY DO THAT TAROT MESSGE STYLE. took out height again as my index page waving cat needs to be responsive without all the blue so long. It's natural w & h is 1000px each. */ /*when i have 100% on height of vh I SEE THAT BOTTOM OF CAT CUT OFF IN WHEN I LOOK AT BORDER HEIGHT OF BODY. SHould i take off background-position bottom? */ /*9/3 took out again since my footer not showing at all on tarot reading column page AND FOOTER STILL DOESN'T SHOW EVEN W/O THIS, SO I'M PUTTING BACK */ /* i took out vh and made 100% and will try css-tricks flexbox body etc to align footer since some of content long and some short. AND IF WORKS ADJUST TAROT MISHMOSH PHOTO SO A BIG LARGER AND ONLY PADDING ON TOP AND BOTTOM */
+    
+   /* reading about viewport height in same css-tricks article. look into and see what best. FYI...THIS FLEX THING DOESN'T WORK WELL ON LONGER PAGES. */
+   
+  /* 9/4 got rid of height 100% again, to try and style TAROT page*/ 
+   
     background-color: #fee5ff; /*this is light pinkish color*/
     margin: 0;
 } 
 
+body{ /*added this per css-tricks https://css-tricks.com/couple-takes-sticky-footer/  */
+    display: flex;
+    flex-direction:column;
+}
+
+.content { /*added this per css-tricks https://css-tricks.com/couple-takes-sticky-footer/  */
+    flex: 1 0 auto; /*so must add this class to each main container page. I did so not including nav and looks good on about page, but other pages have nav cut off half-way on top since I added flex to body,etc. Now will see what happens if I also include class in nav area. NOTE, THE FOOTER STILL DIDN'T END UP ALL THE WAY ON BOTTOM, BUT LOOKS GOOD WHERE IT IS. I ASSUME THAT FOR SHORT PAGES I MAY NEED TO ADD MARGIN 
+    
+    9/4 I got footer to look good just putting in footer class and wrapping it in row, and adding class of col to footer div. try and see how works with other pages.*/
+    
+   /* 9/4 DON'T HAVE THE PATIENCE TO GET RID OF WHAT I'D ADDED FROM:
+    https://css-tricks.com/couple-takes-sticky-footer/   AND GET RID OF CONTENT CLASS ON CONTAINER, ETC. SO WAIT UNITL MAIN WORK DONE TO CHECK THIS OUT IN DETAIL. ESP SINCE I GOT RID OF 100% SINCE SOME PAGES CUT OFF AND NO FOOTER WAS SHOWING. BASICALLY THIS CODE:
+    html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
+    */
+}
 
 .display-4 {
     font-family: 'Oregano', cursive; 
@@ -25,50 +57,77 @@ html, body {
   }
 
 
-h1 {
+h1, h2 {
    /* I want fancier that regular text if possible. Oregano too ornate & distracting. */
 /* there will be background color, but don't want this to interfere with index page for moment */
     color: #FF1166; /*hot pink just like main page*/
  }
 
 .question{
-    padding: 20px;
+    padding: 16px;
     font-size:1rem; /*does this make sense?*/
-    font-weight: bold;
+    font-weight: 600;
     font-style: italic;
     background-color: white;
-}
+    line-height: 1.5
+} 
 
 .answer{
-    padding: 20px 30px;
+    /*padding: 12px;*/
+    font-size: 1rem;
     background-color: white;
 }
 
 /*below starts tarot box area that I had created in practice javatest workspace*/
 
+/* CHECK THIS FOR FLUID BOX : https://www.w3schools.com/css/css_align.asp */
+
+/*#tarot-box{
+    background-color: #ddccff; /*light lavendar, similar to diff one have
+    height: 700px; /* added this 9/5 trying to get box area to stay full for card to show 
+} got rid of this id in main container. seemed pointless at moment */
+
+/*background-color: #7c83f9; /*darker lavendar color*/
+/*   background-color: #fceed1; /*golden light color*/
+ /*  background-color: #f5f791; /*brighter gold color*/
+  /* background-color: #fdffbf; /*slighly less brighter gold color*/
+ /* background-color: #fee5ff; /*this is light pinkish color*/
+ /* background-color: #ddccff; /*light lavendar, similar to diff one have*/
+ /* this is color love for main container...#ffebe0 It's light orangy and I have in about page html on container */
+
 
 #ask{
-    background-color: pink; 
+    font-family: 'Oregano', cursive;
+    background-color: #FF1166;
+    color: white; 
     text-align: center;
-    height:36px;
-    font-size: 19px;
-    width: 580px;
+    line-height: 1.75;
+    font-size: 2.5rem;
+  /*  width: 580px; */
 } 
 
-
 #tarotframe {
-    background-color: pink; 
-    width: 500px;
-    height: 620px; 
- }
+    background-color: #b7b5d1;
+    width: 500px; /* is it not strange that you have this width and it's bigger? */
+    height: 690px;  
+    display: none; /* 9/4 why isn't this HIDDEN when page refreshed?? */
+    /* because it should be 'none', NOT NONE. SEE: 
+    display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them. Take a look at our last example on this page if you want to know how this can be achieved. */
+    
+  }
+
+/* 8/31 NEED 3 MAIN COLORS. PICK ONE MORE. BODY, MAIN CONTAINERS, ETC, PLUS A FONT OR STYLYING FOR H1S. ADD A SHADOW ON CARDS, AND JAZZ UP CLICK HERE AREA, PLUS SHRINK DOWN CARDS AGAIN.  ON LARGE PC THEY OVERLAP OVER CONTAINER FOR CARDS. ONLY A SMIDG.  */
 
 /* all 13 tarot pics are 550 W by 730H. accidentally made too large*/
 #image { /*is ok to size down with % rather than resize photos. I had asked about workspace being smaller if do so, but Sheldon said ok to do % */
-    width: 80%;
-    border: 1px solid black;
-    border-radius: 28px;
-    display: none; /*added this to image and will have tarotcontainer showing to try out MUCH BETTER. SMOOTHER AND FOOTER STAYS ON BOTTOM*/
+    width: 500px;
+    display: none;
+    border-radius: 17px; /*made smaller. had cut into text*/
+    display: none; /*added this to image and will have tarotcontainer showing to try out MUCH BETTER. SMOOTHER AND FOOTER STAYS ON BOTTOM */
+    -webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.3); 
 }
+
 
 /*display:none means that the tag in question will not appear on the page at all (although you can still interact with it through the dom). There will be no space allocated for it between the other tags.
 
@@ -76,25 +135,35 @@ visibility:hidden means that unlike display:none, the tag is not visible, but sp
 
 #intro{
     background-color: white;
-    padding: 20px;
+    padding: 13px;
 }
 
 
-#intro-t {
+/* footer {/* i want this to STAY on bottom, plus it gets cut off on longer pages, plus width is ridiculous at diff lenghts . see css tricks   https://css-tricks.com/couple-takes-sticky-footer/   
     background-color: white;
-    padding: 11px 15px 1px 15px;
+/*    clear:both; */
+/*    text-align:center;
+    padding:6px;
+    font-size: 18px;
+    position: fixed;
+ 
+    width: 80%;
+} DUMMY OUT SINCE NOT GREAT. TRY CLASS OF FOOTER FLEX, where add flex to body on sep line. */
+
+.footer {
+    flex-shrink: 0;
+    background-color: white;
+    color: #FF1166; /*this is light pinkish color*/
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.25rem;
+    padding:0 20px;
+ 
 }
-
-footer {
-    height: 40px;
-    padding: 10px;   
-} 
-
-
-@media only screen and (min-width:1000px){
+/* figure this out after make img naturally center, as well as tarot frame, which i would prefer to alway be there 
+@media only screen and (min-width:400px){
+   #image {
+       max-width: 350px;
+   }
     
-    #look-up {
-        margin-left: 280px;
-    }
 }
-

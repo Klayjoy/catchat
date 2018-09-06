@@ -6,16 +6,14 @@
 
 /*all of probs had with items not appearing when I saved (css color only showed while typing notes and would revert back to nothing and also not have js work was for 2 reasons: had clickMe instead of clickME and had a directory up on css link in head*/
 
-// cards come up fine, but if one clicks on image that slid down and new random card is up when click on 'think of question'. personally i like this so doesn't have to keep sliding down, BUT THEN MUST STATE HOW WORKS in wording on play.html. 
-
 $(document).ready(function() {
     $('#ask').click(function(){
-        $('#image').fadeIn(3000);
-        $('#tarotframe').slideDown(3000);
+        $('#tarotframe').fadeIn(2000); /* i may change rate. still too fast. something wrong with main page layout, as before tarotframe was hidden and cards faded in, and when refreshed page, tarotframe would be empty again. 9/4 */
+        $('#image').fadeIn(5000);
   });
 });  
 
-var images = [ /* 13 cards in total. I will let querant know how many cards are in the deck so they don't wonder if the got them all. 
+var images = [ /* 16 cards in total as of 9/5. Prefer to have more selection for guests. Don't care if random sometimes displays similar cards in a row. That would make me want to stay on longer to see which other cards there...if I liked what I saw and didn't feel duped */
 
 /*for images below, don't want them muddying up cards. And seems like a pain in ass to get all of this on img, esp since some photos have asian or arabic names in print/script. SHOULD I JUST ACKNOWLEDGE THAT ALL CARDS IMGS FROM PNGTREE.COM? */
 
@@ -25,6 +23,9 @@ var images = [ /* 13 cards in total. I will let querant know how many cards are 
   "img-t/tree.jpg",
   "img-t/call.jpg", // Graphics from  <a href="https://pngtree.com/freepng/cat-call_2417042.html">pngtree.com</a> (Axel Arriaza Muñoz)
   "img-t/money.jpg",// <a href='https://pngtree.com/'>Graphics from pngtree.com</a>  )(Jechelle Ann Martin)
+  "img-t/travel.jpg",
+  "img-t/god.jpg",
+  "img-t/love.jpg",
   "img-t/newspaper.jpg",
   "img-t/bad.jpg",
   "img-t/fly.jpg",

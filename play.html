@@ -16,7 +16,7 @@
   </head>
   <body>
       
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!--9/4 adding content class here made nav bar too large**************-->
   <a class="navbar-brand" href="index.html">Cat Chat Tarot</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -24,25 +24,20 @@
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="play.html">Let's Play!<span class="sr-only">(current)</span></a>
-   <!--   </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Cat Chat Tarot</a> I STILL DON'T UNDERSTAND WHY THERE'S A HOME ITEM, WHEN TO ME THAT'S PART OF LIST.-->
-      </li>
-      
+
         <li class="nav-item">
         <a class="nav-link" href="about.html">About</a>    
       </li>    
         <li class="nav-item">
         <a class="nav-link" href="tarot.html">Weekly Column</a>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="play.html">Let's Play!<span class="sr-only">(current)</span></a>
+      </li>      
         <li class="nav-item">
         <a class="nav-link" href="purchase.html">Purchase a Reading</a>
       </li>
-    <!--  <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li> <!--got rid of for now, unless do membership only area.-->
+
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search">
@@ -50,20 +45,19 @@
     </form>
   </div>
 </nav>
-   
-   <!-- Klea, please find ONE STYLE TO DO for all other pages besides landing page for continuity. Not sure if will use same font, but if do, I need it to stand out from jumbotron, and not distract from page design. Color will be same as logo font, though -->
-   
+
    <!--maybe I need to adjust css for container and make sure in proper order?-->
- <div class="container"> 
+ <div class="container" style="background-color:#ffebe0" > <!--9/4. I purposely left out CONTENT class out of this container to see what would happen. After deleted CONTENT class from NAV class area, I NOTICED THAT FOOTER WENT ALL THE WAY ACROSS THE WAY I'D WANTED, but perhaps was already like that and didn't notice? When done with main part of site, see if footer might be better contained rather than fluid across, BUT IT BALANCES OUT NAV. PLUS FOOTER AND NAV MAY NEED TO BE PUNCHED UP WITH COLOR AND STYLE-->
  
  <h1>Let's Play!</h1>  
  
- <div class="row justify-content-center"> <!--i added justify etc to center tarot reveal area 8/29 1:42pm-->
- <div class="col-12" id="intro-t">
+ <div class="row justify-content-center p-2"> <!--i added justify etc to center tarot reveal area 8/29 1:42pm-->
+ <div class="col" id="intro">
 
-<p>Think of a question and click below for an action card. Every week, I hand pick 13 different cards, that randomly appear when you click below. Once you get your action card, click again for another question. Once you have gotten your first action card, the cards randomly appear with each new click. Enjoy!!</p>
+<p class="p-1" style="font-size:18px;">Think of a question, wait a moment, and then click below for an action card. Every week, I hand pick 16 different cards, that randomly appear when you click below. Once you get your action card, click again for another question. Once you have gotten your first action card, the cards randomly appear with each new click. Enjoy!!</p>
 
-</div> <!--end of intro div--> <!--because i added an about section, not sure     what this is a part of or if I got rid of intro. Also, even if i have and about page, there should be short explanation of games, with a link back to ABOUT page (for seo) and ease of use-->
+</div> <!--end of col--> <!--added this here 9/4, plus an end div of row right after 'click here' ask area. NOW BOX LOOKS LIKE USED TO, BUT I WANT TO REDESIGN.-->
+</div><!--adding end row here to try and get tarotbox isolated and stay hidden9/4 THIS HIDES BOX BELOW BUT NEVER SHOWS UP.-->
 
 
 <!--see bootstrap for cols and offset: https://getbootstrap.com/docs/4.0/layout/grid/ -->
@@ -76,22 +70,30 @@
 
 
 <!--tarot box below this is duplicate of below. col/row test------->
-<div class="row">
-  <div class="col" id="tarot-box"> <!--added cols to this and tarotframe etc. I TOOK OUT SIZES. THEY MESSED UP PHOTO AT IN BET SIZE. TOOK OFF COL SIZE ON TAROT BOX AND TAROT FRAME AREA.-->
-  
+<!--<div class="row"> -->
+<!--  <div class="container" id="tarot-box"> <!--added cols to this and tarotframe etc. I TOOK OUT SIZES. THEY MESSED UP PHOTO AT IN BET SIZE. TOOK OFF COL SIZE ON TAROT BOX AND TAROT FRAME AREA.-->
+  <!--9/1 took out as col and turned into container. MAKING IT A COL MESSES UP LAYOUT-->
+ <!--9/1. I probably messed up page trying to add container for tarot area. the divs are in odd places I added this here.-->
   <!--AND NOW WILL TAKE OUT IMG SIZE IN CSS AS FLUID NOT WORKING-->
+<div class="row p-2">
         <div class="col" id="ask">
           Click here for your action card!! <!--WORK ON TEXT BEING RESP TO GET SMALLER-->
         </div>
- <!--book says for btsrp to work prop col & row must be inside container. FIGURE THIS OUT-->       
-<div class="col mx-auto" style="width: 580px;" id="tarotframe" >
-   <img id="image" src="img/movie.png" class="img-fluid mx-auto d-block" style="width: 500px">
+</div> <!--end of row. ADDED 9/4 AND design ended up looking closer to what I'd had before.-->
+<!--added this 9/4 to see if can get a box to stay in back and hold up body to not shrink, but also have tarotframe pop down-->
+ <!--book says for btsrp to work prop col & row must be inside container. FIGURE THIS OUT-->   
+ <div class="row p-2">
+ <div class="col mx-auto pt-2" id="tarotframe"> 
+   <img id="image" src="img-t/fly.jpg" class="img-fluid mx-auto d-block">
+ </div> <!--9/4 I just added this row to try and get tarotframe to adjust and realized no row on top of this col-->
+
+<!--8/31. not sure if from yest or today, but my image no longer hidden so that can slide down. It's supposed to be hidden after page refreshed. PERHAPS CAUSE ADJUSTED CSS OR THIS PAGE WITH TAROT FRAME? added mx-auto d-block which centered photo. only had img-fluid before, plus css styling  THIS MESSED IT UP: class="img-fluid mx-auto d-block" GO BACK TO img-fluid and fix find new way to center, as I'd done before anyway.--> <!--ugh...but now jquery works, but img no longer fluid I MUST HAVE ADJUSTED CSS TAROT ITEMS-->
 
 </div>  <!--end of tarotframe-->     
 
-</div> <!--end of tarot box-->
-</div> <!--I ADDDED A ROW SO ADDED EXTRA END DIV. NORMALLY WOULD BE LAST DIV FJY BUT DON'T WANNA MESS UP LAST COMMENT LINE SO DON'T GET MIXED UP-->
-</div> <!--end of container of col/row test. BEFORE ANY COL BOOT ROW LOOKED LIKE BELOW-->
+<!--</div> <!--end of tarot box-- got rid of tarot box for now. 9/5-->
+
+</div> <!--end of main container, but I added another container with id of tarot-box -->
 
 
 
@@ -104,8 +106,8 @@
 <!--KLEA-------FOOTER MUST STAY ON BOTTOM. PLEASE FIX----------->
 
 <!--<div class="row w-100 p-1"> 
- <div class="col-12">  -->
-  <footer class="footer">footer with copyright, etc.</footer> 
+ <div class="col-12">  --> <!--ADDED THIS BEFORE ANY CONTAINER CLASS BY ACCIDENT. TRYING TO FIGURE OUT WHY FOOTER ON PURCHASE SO DIFF FROM TAROT.HTML-->
+  <footer class="footer">Cat Chat Tarot Inc. are copyrighted by Klea Kostopoulos 2018</footer> 
  </div>
 <!--</div>-->
 
